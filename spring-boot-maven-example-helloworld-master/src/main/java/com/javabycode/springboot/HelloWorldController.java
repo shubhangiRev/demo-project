@@ -11,7 +11,7 @@ public class HelloWorldController {
     public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
         
         String message="You just create Spring Boot Example successfully";
-        model.addAttribute("name", name);
+        model.addAttribute("name", "Happy New Year");
         model.addAttribute("message", message);
         
         return "hello";
